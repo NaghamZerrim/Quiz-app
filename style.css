@@ -1,0 +1,105 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container for the quiz */
+.quiz-container {
+    background-color: rgb(233, 200, 200);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Styling the question text */
+#question {
+    font-size: 22px;
+    margin-bottom: 20px;
+    /*margin-left: 140px;*/
+    font-weight: bold;
+    color: #333;
+}
+
+/* Remove default list styles for choices */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Styling for individual list items (choices) */
+li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for choices */
+li:hover {
+    background-color: #e2e2e2;
+}
+
+/* Selected answer style */
+li.selected {
+    background-color: #f1f1f1;  /* Light gray for selected answers */
+}
+
+/* Styling for correct answer */
+li.correct {
+    background-color: rgb(98, 199, 98);
+    color: white;
+    border-color: rgb(98, 199, 98);
+}
+
+/* Styling for incorrect answer */
+li.incorrect {
+    background-color: red;
+    color: white;
+    border-color: red;
+}
+
+/* Styling for the button */
+button {
+    background-color: #5b96c3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for the result text */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Disable button appearance */
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
